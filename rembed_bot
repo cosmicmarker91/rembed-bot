@@ -16,7 +16,7 @@ from discord import app_commands
 from discord.ext import commands
 from dotenv import load_dotenv
 
-SETTINGS_FILE = "settings.json"
+SETTINGS_FILE = os.getenv("SETTINGS_PATH", "settings.json")
 DEFAULT_TZ = "Asia/Muscat"  # change if you like
 
 
